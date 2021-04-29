@@ -3,7 +3,7 @@ from datetime import datetime, timedelta
 from airflow.operators.dummy_operator import DummyOperator
 
 default_args = {
-    'owner': 'anuj',
+    'owner': 'keerthi',
     'depends_on_past': False,
     'start_date': datetime(2021, 2, 22),
     'retries': 0
