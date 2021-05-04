@@ -17,9 +17,9 @@ default_args = {
 }
 
 
-with DAG('airflow_tutorial_v01',
+with DAG('DAG-4',
          default_args=default_args,
-         schedule_interval='0 * * * *',
+         schedule_interval='@once',
          ) as dag:
 
     print_hello = BashOperator(task_id='print_hello',
